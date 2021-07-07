@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const updateTemperature = () => {
     document.querySelector('#temperature').innerText = thermostat.temperature;
+    document.querySelector('#temperature').className = thermostat.energyUsage();
   }
 
   const thermostat = new Thermostat();
